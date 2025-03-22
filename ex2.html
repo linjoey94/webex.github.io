@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+     table {
+        width: 500px;
+        margin: 0 auto;
+        border-collapse: collapse;
+     }
+     tr, td, th {
+        border: 1px black solid;
+     }
+
+    .a {
+    width: 300px; /* 設定固定寬度 */
+    }
+  </style>
+  <link href="ex2.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="c_title">公告對象: </td>
+            <td class="c_content"><input type="checkbox" name="hobby[]" value="1" checked >教職員
+                <input type="checkbox" name="hobby[]" value="2">學生
+                <input type="checkbox" name="hobby[]" value="3">學校首頁</td>
+        </tr>
+        <tr>
+            <td class="c_title">公告類型: </td>
+            <td class="c_content"><input type="radio" name="site" value="1">演講
+                <input type="radio" name="site" value="2">演討會
+                <input type="radio" name="site" value="3">徵才
+                <input type="radio" name="site" value="4">招生、進修教育訓練
+                <input type="radio" name="site" value="5">其他
+            </td>
+        </tr>
+        <tr>
+            <td class="c_title">主旨:</td>
+            <td class="c_content"><input type="text" list="comment" class="a"></td>
+        </tr>
+        <tr>
+            <td class="c_title">截止日期:</td>
+            <td class="c_content">
+            <select name="year_name" size="1">
+            <option value="1">101</option>
+            <option value="2">102</option>
+            <option value="3">103</option>
+            <option value="4">104</option>
+            <option value="5">105</option>
+            <option value="6">106</option>
+            <option value="7">107</option>
+            <option value="8">108</option>
+            <option value="9">109</option>
+            <option value="10">110</option>
+            </select>
+            <h>年</h>
+            <select name="month_name" size="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <h>月</h>
+            <select name="date_name" size="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+            </select>
+            <h>日</h>
+        </td>
+        </tr>
+        <tr>
+            <td class="c_title">連結網址:</td>
+            <td class="c_content"><input type="text" list="comment" class="a"></td>
+        </tr>
+        <tr>
+            <td class="c_title">公告內容:</td>
+            <td class="c_content"><textarea name="content" rows="7" cols="40"></textarea></td>
+        </tr>
+        <tr align="center">
+            <td colspan="2" >
+                <input type="reset" size="20" value="確定送出" class="c_button">
+                <input type="reset" size="20" value="重新填寫" class="c_button">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
